@@ -1,0 +1,24 @@
+.basket_item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.basket_item > img {
+  width: 20%;
+  padding: 20px;
+}
+
+.basket_item__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.basket_item__info > button {
+  background-color: #f0c14b;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}

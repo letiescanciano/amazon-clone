@@ -42,7 +42,10 @@
   margin-right: 10px;
   color: white;
 }
-
+.header__option > a {
+  color: white;
+  text-decoration: none;
+}
 .header__optionLineOne {
   font-size: 10px;
 }

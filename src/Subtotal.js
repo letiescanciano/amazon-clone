@@ -13,11 +13,10 @@ const Subtotal = () => {
     <div className="subtotal">
       <CurrencyFormat
         renderText={(value) => {
-          console.log("value", value);
           return (
             <>
               <p>
-                Subtotal ({basket.length} items):{" "}
+                Subtotal ({basket.length} items):
                 <strong>{getBasketTotal.toFixed(2)}</strong>
               </p>
               <small className="subtotal__gift">

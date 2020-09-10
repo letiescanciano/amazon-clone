@@ -1,6 +1,7 @@
 import React from "react";
 import "./BasketItem.css";
 import { useStateValue } from "./StateProvider";
+
 const BasketItem = ({ data }) => {
   const { _id, title, price, image, rating } = data;
 
@@ -27,7 +28,9 @@ const BasketItem = ({ data }) => {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>🌟 </p>
+              <span role="img" aria-label="star">
+                🌟{" "}
+              </span>
             ))}
         </div>
         <button onClick={removeFromBasket}>Remove from basket</button>

@@ -2,16 +2,8 @@ import { IMAGE } from "./Product";
 import { v4 as uuidv4 } from "uuid";
 
 export const initialState = {
-  basket: [
-    {
-      _id: uuidv4(),
-      id: 1,
-      title: "the lean",
-      rating: 4,
-      price: "12.99",
-      image: IMAGE,
-    },
-  ],
+  basket: [],
+  user: {},
 };
 
 const reducer = (state, action) => {
@@ -29,6 +21,8 @@ const reducer = (state, action) => {
           (_item) => _item._id !== action.item._id
         ),
       };
+    case "SET_USER":
+      return { ...state, user: action.user };
     default:
       return state;
   }
